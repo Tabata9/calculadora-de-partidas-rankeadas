@@ -1,12 +1,9 @@
 function calcularNivel(vitorias, derrotas) {
-    // Calcula o saldo de Ranqueadas
+
     var saldoVitorias = vitorias - derrotas;
 
-    // Determina o nível com base no saldo de vitórias
     var nivel;
-    
-    
-
+        
     if (vitorias < 10) {
         nivel = "Ferro";
     } else if (vitorias >= 11 && vitorias <= 20) {
@@ -23,9 +20,7 @@ function calcularNivel(vitorias, derrotas) {
         nivel = "Imortal";
     }
 
-    // Exibe a mensagem final
     console.log("O Herói tem um saldo de " + saldoVitorias + " está no nível de " + nivel);
 }
 
-// Exemplo de uso
-  calcularNivel(125, 35);// Substitua os valores de vitórias e derrotas pelos desejados
+  calcularNivel(125, 35);
